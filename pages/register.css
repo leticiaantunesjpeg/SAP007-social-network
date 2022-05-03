@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.template {
+  display: flex;
+  flex-direction: column;
+  bottom: 50%;
+}
+.email-register,
+.password-register,
+.username {
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 2%;
+  height: 30px;
+  font-size: 19px;
+  background-color: #f2f2f2;
+  border: black;
+  align-self: center;
+}
+.error,
+.registered {
+  text-align: center;
+}
+.button-enter {
+  background-color: #f26e22;
+  width: 70%;
+  margin: auto;
+  margin-top: 10%;
+  border-radius: 8px;
+  height: 25px;
+  font-size: 16px;
+  box-shadow: 7px 6px 5px grey;
+  border: black;
+}
+.user-register {
+  margin: auto;
+  margin-bottom: 25%;
+  margin-top: -20%;
+}
+.user-register a {
+  color: black;
+  position: relative;
+  top: 150px;
+}
+
+@media (min-width: 280px) and (max-width: 424px) {
+  .template {
+    margin-top: 20%;
+  }
+  .button-enter {
+    width: 50%;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 999px) {
+  .template {
+    margin-top: 10%;
+  }
+  .button-enter {
+    width: 30%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 2142px) {
+  .template {
+    margin-top: 10%;
+  }
+  .email-register,
+  .password-register,
+  .username {
+    width: 50%;
+  }
+  .button-enter {
+    width: 30%;
+  }
+  .user-register {
+    margin-top: -10%;
+  }
+}

@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  bottom: 50%;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18%;
+}
+.input-email,
+.input-password {
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 2%;
+  height: 30px;
+  font-size: 19px;
+  background-color: #f2f2f2;
+  border: black;
+  align-self: center;
+}
+.error-email,
+.error-password {
+  text-align: center;
+}
+.enter {
+  background-color: #f26e22;
+  width: 70%;
+  margin: auto;
+  margin-top: 10%;
+  border-radius: 8px;
+  height: 25px;
+  font-size: 16px;
+  box-shadow: 7px 6px 5px grey;
+  border: black;
+}
+.container p {
+  margin: auto;
+  position: relative;
+  top: 35px;
+}
+.google-button {
+  width: 70%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 16px;
+  background-color: #f2aa80;
+  box-shadow: 7px 6px 5px grey;
+  border: black;
+  color: black;
+  border-radius: 8px;
+  position: relative;
+  top: 75px;
+}
+.google-logo {
+  width: 20%;
+}
+.register {
+  margin: auto;
+  margin-bottom: 15%;
+}
+.register a {
+  color: black;
+  position: relative;
+  top: 150px;
+}
+
+@media (min-width: 360px) and (max-width: 915px) {
+  .input-email,
+  .input-password {
+    width: 60%;
+  }
+  .enter,
+  .google-button {
+    margin-top: 10%;
+    width: 50%;
+    align-items: center;
+  }
+  .google-button {
+    top: 20px;
+  }
+  .register a {
+    top: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .login {
+    margin-top: 5%;
+  }
+  .input-email,
+  .input-password {
+    width: 40%;
+  }
+  .enter,
+  .google-button {
+    margin-top: 2%;
+    width: 25%;
+    align-items: center;
+  }
+  .container p {
+    top: 20px;
+  }
+  .google-button {
+    top: 20px;
+  }
+  .register a {
+    top: 60px;
+  }
+}
